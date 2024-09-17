@@ -1,0 +1,303 @@
+nav ul{
+    list-style: none; /*Remove as bolinhas padrõ da lista*/
+    margin: 0;
+    padding: 0;
+    display: flex; /*Faz com que os itens fiquem lado a lado(horizontal)*/
+    justify-content: center; /*Centraliza os itens horizontalmente*/
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ nav ul li{
+    margin: 0 15px; /*Espaçamento entre os itens do menu*/
+ }
+
+ nav ul li a{
+    color: white; /*Cor do texto dos links*/
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    font-size: 18px; /*Tamanho da fonte*/
+    transition: color 0.3s; /*Transição suave para a mudança de cor*/
+ }
+
+ nav ul li a:hover{
+    color: black; /*Cor do texto ao passar o mouse(hover)*/
+ }
+
+ .Contatos{
+    padding: 10px 0;
+    text-align: center;
+ }
+
+ h1{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+ }
+
+ h4{
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ body{
+    background-color: antiquewhite;
+ }
+
+nav {
+    background-color: rgba(136, 90, 53, 0.881);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #df4060;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgb(222, 111, 115);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+/* Estilo geral do footer */ 
+footer {
+    background-color: rgba(136, 90, 53, 0.881); 
+    color: white; 
+    padding: 40px 0; 
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+.footer-section { 
+    flex-basis: 23%; /* Faz com que as seções ocupem 23% da largura, com espaço para margens */
+    margin-bottom: 20px;
+}
+.footer-section h4 { 
+    margin-bottom: 15px; 
+    font-size: 18px; 
+    color: rgb(255, 164, 167);
+}
+.footer-section p, .footer-section ul {
+    margin: 0 ; 
+    padding: 0; 
+    line-height: 1.6;
+}
+.footer-section ul {
+    list-style-type: none;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+    color: #000000;
+}
+
+.footer-bottom { 
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px 0; 
+    border-top: 1px solid #444; 
+    font-size: 14px;
+}
+.footer-bottom p {
+    margin: 0;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(136, 90, 53, 0.881);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+  gap: 10px;
+  box-shadow: 0px 0px 20px antiquewhite;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(222, 111, 115);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+/* facebook*/
+.containerFive:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button {
+    padding: 1.0em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: rgb(222, 111, 115);
+    box-shadow: 0px 15px 20px rgb(255, 164, 167);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+.cards{
+    background-color: rgb(226, 214, 196);
+    border: 1px solid #090101d3;
+    border-radius: 15px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.429); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 10; /* Permite que os cards cresçam igualmente */
+    max-width: 400px; /* Define uma largura máxima para os cards */
+}
+
+.slider {
+    width: 80%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: static; /
+}
+
+.slides {
+    display: flex; 
+    width: 100%; 
+    animation: slideAnimation 9s infinite; 
+}
+
+.slide {
+    width: 100%; 
+    flex-shrink: 0; 
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); } 
+    33% { transform: translateX(-100%); } 
+    66% { transform: translateX(-200%); } 
+    100% { transform: translateX(0); } 
+}
+
+.slide img {
+    width: 100%; 
+    display: block; 
+}
